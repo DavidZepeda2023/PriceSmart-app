@@ -1,30 +1,22 @@
-/*
-    Campos:
-        nombre
-        descripcion
-        precio
-        stock
-*/
-
 import { Schema, model } from "mongoose";
 
 const productsSchema = new Schema(
   {
     name: {
-      type: Number,
-      require: true,
+      type: String, // 🔹 string
+      required: true,
     },
-    desciption: {
+    description: {  // 🔹 corregido typo de desciption
       type: String,
     },
     price: {
       type: Number,
-      require: true,
+      required: true,
       min: 0,
     },
     stock: {
       type: Number,
-      require: true,
+      required: true,
       min: 0,
     },
   },

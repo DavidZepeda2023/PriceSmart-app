@@ -9,6 +9,7 @@ router
   .get(productsController.getProducts)
   .post(productsController.createProducts);
 
+
 router
   .route("/:id")
   .get(productsController.getSingleProduct)

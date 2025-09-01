@@ -1,0 +1,15 @@
+Errores
+•	Pase I minúscula al ID del delete del controlador de productos
+•	Instale Express con Force por las dependencias de Cloudinary
+•	Instale Cokkie Parser con Force por lo mismo de Cloudinary
+•	En config cambie DB_URI por MONGO_URI poque así esta en el env y ya corrió el Backend
+•	Agregue app.use(express.json()); en el app porque no lo tenia
+•	Cambiado name de tipo Number a String para aceptar nombres de productos como texto.
+•	Corregido typo en description (antes desciption).
+•	Se definió correctamente la variable token al generar JWT, evitando el error ReferenceError: token is not defined.
+•	Se añadió control de intentos fallidos y bloqueo temporal para empleados y clientes.
+•	Se normalizaron los roles (admin, employee, customer) para que coincidan con el middleware y evitar “Access denied”.
+•	Se corrigió la comparación de roles entre JWT y allowedUserTypes para que funcione con minúsculas.
+•	Se corrigieron los nombres de los campos name y description para que coincidan con el modelo.
+•	Se agregaron mensajes de error claros y códigos HTTP correctos en PUT y DELETE.
+•	Se aseguró que POST y GET funcionen con el token/cookie generado desde login.

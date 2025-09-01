@@ -11,8 +11,6 @@ mongoose.connect(config.db.URI);
 
 // 3- Creo una constante que es igual a la conexión
 const connection = mongoose.connection;
-
-// Veo si funciona
 connection.once("open", () => {
   console.log("DB is connected");
 });
